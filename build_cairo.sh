@@ -10,7 +10,6 @@ CFLAGS="-fPIC -I$OUTDIR/include -L$OUTDIR/lib" \
 	--enable-glesv2=auto \
 	--enable-glesv3=auto \
 	--enable-static \
-	--with-icu=yes \
 
 ret=$?
 if [ "$ret" != 0 ];then
