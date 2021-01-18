@@ -7,7 +7,7 @@ CFLAGS="-fPIC -I$OUTDIR/include -L$OUTDIR/lib" \
 	./configure --host=arm-linux-androideabi \
 	--prefix=$OUTDIR \
 	--enable-gl=auto \
-	--enable-glesv2=auto \
+	--enable-glesv2=no \
 	--enable-glesv3=auto \
 	--enable-static \
 

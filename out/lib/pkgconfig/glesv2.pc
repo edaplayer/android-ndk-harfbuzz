@@ -1,0 +1,12 @@
+prefix=/home/git/work/ndk/builddir/out
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: glesv2
+Description: OpenGLESv2 surface backend for cairo graphics library
+Version: 1.17.2
+
+Requires:
+Libs: -lGLESv2 
+Cflags: -I${includedir}/cairo 
