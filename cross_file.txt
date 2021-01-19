@@ -4,37 +4,23 @@ cpu_family = 'arm'
 cpu = 'arm'
 endian = 'little'
 
-[build_machine]
-system = 'linux'
-cpu_family = 'x86_64'
-cpu = 'i686'
-endian = 'little'
-
 [constants]
-android_ndk = '/home/geek/work/ndk/toolchain/bin/'
-toolchain = '/home/geek/work/ndk/toolchain/bin/arm-linux-androideabi-'
-common_flags = '-L/home/geek/work/ndk/builddir/out/lib -I/home/geek/work/ndk/builddir/out/include'
-outdir = '/home/geek/work/ndk/builddir/out/'
-
-[properties]
-c_args = common_flags
-cpp_args = c_args
-c_link_args = '-L/home/geek/work/ndk/builddir/out/lib'
+android_ndk = '/home/git/work/ndk/toolchain/bin/'
+toolchain = '/home/git/work/ndk/toolchain/bin/arm-linux-androideabi-'
+outdir = '/home/git/work/ndk/builddir/out/'
 
 [binaries]
-c = android_ndk + 'arm-linux-androideabi-gcc'
-cpp = android_ndk +  'arm-linux-androideabi-g++'
-ar = android_ndk + 'arm-linux-androideabi-ar'
-ld = android_ndk + 'arm-linux-androideabi-ld'
-c_ld = android_ndk + 'arm-linux-androideabi-ld'
-objcopy = android_ndk + 'arm-linux-androideabi-objcopy'
-strip = android_ndk + 'arm-linux-androideabi-strip'
+c = 'arm-linux-androideabi-gcc'
+cpp = 'arm-linux-androideabi-g++'
+ar = 'arm-linux-androideabi-ar'
+ld = 'arm-linux-androideabi-ld'
+objcopy = 'arm-linux-androideabi-objcopy'
+strip = 'arm-linux-androideabi-strip'
 pkgconfig = '/usr/bin/pkg-config'
 
-[paths]
-libdir = '/home/geek/work/ndk/builddir/out/lib'
-prefix = '/home/geek/work/ndk/builddir/out/'
-
 [built-in options]
-c_std = 'c99'
-pkg_config_path = '/home/geek/work/ndk/builddir/out/lib/pkgconfig'
+c_std = 'c11'
+prefix = '/home/git/work/ndk/builddir/out/'
+pkg_config_path = '/home/git/work/ndk/builddir/out/lib/pkgconfig'
+
+# vim:ft=python
