@@ -1,0 +1,32 @@
+[host_machine]
+system = 'android'
+cpu_family = 'arm'
+cpu = 'arm'
+endian = 'little'
+
+[constants]
+android_ndk = '/home/git/work/ndk/toolchain/bin/'
+toolchain = '/home/git/work/ndk/toolchain/bin/arm-linux-androideabi-'
+outdir = '/home/git/work/ndk/builddir/out/'
+
+[binaries]
+c = 'arm-linux-androideabi-gcc'
+cpp = 'arm-linux-androideabi-g++'
+ar = 'arm-linux-androideabi-ar'
+ld = 'arm-linux-androideabi-ld'
+objcopy = 'arm-linux-androideabi-objcopy'
+strip = 'arm-linux-androideabi-strip'
+pkgconfig = '/usr/bin/pkg-config'
+
+[built-in options]
+c_std = 'c11'
+prefix = '/home/git/work/ndk/builddir/out/'
+c_args = ['-fPIC','-I/home/git/work/ndk/builddir/out/include']
+cpp_args = ['-fPIC','-I/home/git/work/ndk/builddir/out/include']
+c_link_args = ['-fPIE','-L/home/git/work/ndk/builddir/out/lib']
+
+pkg_config_path = '/home/git/work/ndk/builddir/out/lib/pkgconfig'
+
+default_library = 'static'
+
+# vim:ft=python
