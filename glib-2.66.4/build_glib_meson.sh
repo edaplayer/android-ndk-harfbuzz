@@ -1,4 +1,3 @@
 #!/bin/bash
 
-# . ../env.sh
-meson release -Ddefault_library=static --cross-file  cross_file.txt
+meson release --cross-file cross_file.txt
