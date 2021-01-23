@@ -17,7 +17,7 @@ Usage:
 	pixman-0.40.0.tar.gz
 	zlib-1.2.7.tar.gz
 
-3. Unzip tarball
+3. Extract tarballs
 
 4. ./build_all.sh
 ```
